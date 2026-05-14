@@ -37,10 +37,10 @@ void read_adc(int fd, unsigned long request, const char* label, float fsr) {
 
 int main() {
     float fsr = 4.096f;  // Assuming PGA ±4.096V
-    int fd = open("/dev/driver_ads1115", O_RDONLY);  // Match device name from driver
+    int fd = open("/dev/ads1115_driver", O_RDONLY);  // Match device name from driver
 
     if (fd < 0) {
-        perror("Failed to open /dev/ads1115");
+        perror("Failed to open /dev/ads1115_driver");
         return 1;
     }
 

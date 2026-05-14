@@ -9,7 +9,7 @@
 #include <linux/ioctl.h>
 #include <linux/delay.h>
 
-#define DRIVER_NAME     "driver_ads1115"
+#define DRIVER_NAME     "ads1115_driver"
 #define CLASS_NAME      "ads1115"
 #define DEVICE_NAME     "ads1115"
 #define IOCTL_MAGIC     'a'
